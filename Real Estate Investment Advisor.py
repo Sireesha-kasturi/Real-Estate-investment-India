@@ -8,6 +8,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sn
+import streamlit as st
+import matplotlib.pyplot as plt
+import warnings
+warnings.filterwarnings('ignore')
 
 
 # %%
@@ -404,7 +408,7 @@ plt.xticks(rotation=45)
 plt.show()
 
 # %%
-8.	What is the median age of properties by locality?
+#What is the median age of properties by locality?
 median_age = data.groupby('Locality')['Age_of_Property'].median()
 print(median_age)
 
