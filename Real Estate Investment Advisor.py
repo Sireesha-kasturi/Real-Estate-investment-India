@@ -9,7 +9,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sn
 import streamlit as st
-import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings('ignore')
 
