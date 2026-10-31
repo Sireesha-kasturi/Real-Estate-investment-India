@@ -408,7 +408,7 @@ plt.xticks(rotation=45)
 plt.show()
 
 # %%
-#What is the median age of properties by locality?
+#8. What is the median age of properties by locality?
 median_age = data.groupby('Locality')['Age_of_Property'].median()
 print(median_age)
 
@@ -514,7 +514,7 @@ plt.ylabel('Number of Properties')
 plt.show()
 
 # %%
-18.	Does parking space affect property price?
+#18.	Does parking space affect property price?
 
 plt.figure(figsize=(9,5))
 
