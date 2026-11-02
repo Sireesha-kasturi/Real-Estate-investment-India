@@ -15,7 +15,7 @@ warnings.filterwarnings('ignore')
 
 
 # %%
-data=pd.read_csv(r"C:\Users\DELL\Desktop\india_housing_prices (1).csv")
+data = pd.read_csv("india_housing_prices (1).csv")
 data
 
 
