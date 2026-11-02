@@ -20,13 +20,17 @@ st.title('Real Estate Investment Advisor')
 st.subheader('Predicting Property Profitability & Future Value')
 
 
-# In[11]:
-
-
-csv_path = Path(__file__).parent / "india_housing_prices (1).csv"
+csv_path = Path(__file__).parent / "india_housing_prices (1).csv.gz"
 
 if not csv_path.exists():
-    st.error(f"CSV file not found: {csv_path.name}. Upload it to the same GitHub repository folder as this Python file.")
+    st.error(f"Dataset not found: {csv_path.name}")
+    st.stop()
+
+data = pd.read_csv(csv_path, compression="gzip")
+
+st.success("Dataset loaded successfully!")
+st.write("Dataset preview")
+st.dataframe(data.head())
     st.stop()
 
 data = pd.read_csv(csv_path)
