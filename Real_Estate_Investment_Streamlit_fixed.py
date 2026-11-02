@@ -34,7 +34,7 @@ st.dataframe(data.head())
 st.success("Dataset loaded successfully!")
 st.write("Dataset preview")
 st.dataframe(data.head())
-st.stop()
+    st.stop()
 
 data = pd.read_csv(csv_path)
 st.write("Dataset preview")
