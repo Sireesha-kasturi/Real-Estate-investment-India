@@ -7,6 +7,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+print("Matplotlib installed successfully")
 import seaborn as sn
 import streamlit as st
 import warnings
@@ -27,14 +28,11 @@ data.info()
 # %%
 data.head()
 
-
-
 # %%
 data.tail()
 
 # %%
 data.describe()
-
 
 # %%
 data.columns
@@ -525,11 +523,5 @@ sns.boxplot(
 
 plt.title('Property Price Distribution by Parking Space')
 plt.show()
-
-
-
-
-# %%
-
 
 
